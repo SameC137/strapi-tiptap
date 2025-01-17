@@ -1,0 +1,13 @@
+{
+  "extends": "@strapi/typescript-utils/tsconfigs/admin",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"],
+  "compilerOptions": {
+    "rootDir": "../",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*"]
+    }
+  }
+}

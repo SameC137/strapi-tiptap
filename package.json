@@ -1,0 +1,83 @@
+{
+  "version": "0.0.1",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+  },
+  "dependencies": {
+    "@strapi/icons": "^2.0.0-rc.14",
+    "@tiptap/extension-code-block-lowlight": "^2.10.4",
+    "@tiptap/extension-typography": "^2.10.4",
+    "@tiptap/pm": "^2.10.3",
+    "@tiptap/react": "^2.10.3",
+    "@tiptap/starter-kit": "^2.10.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lowlight": "^3.3.0",
+    "lucide-react": "^0.468.0",
+    "next-themes": "^0.4.4",
+    "react-intl": "^7.0.4",
+    "react-medium-image-zoom": "^5.2.12",
+    "reactjs-tiptap-editor": "^0.1.11",
+    "sonner": "^1.7.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^5.2.8",
+    "@strapi/strapi": "^5.5.2",
+    "@strapi/typescript-utils": "^5.5.2",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.1.13",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "@strapi/sdk-plugin": "^5.2.8",
+    "@strapi/strapi": "^5.5.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.1.13"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "tiptap-editor",
+    "displayName": "",
+    "description": ""
+  },
+  "name": "@samemichaeltadele/tiptap-editor",
+  "description": "",
+  "license": "MIT",
+  "author": "@samemichaeltadele"
+}
