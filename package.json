@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["Strapi", "Tiptap", "Editor", "Strapi Rich Text Editor", "Strapi Plugin", "Strapi Tiptap Editor", "Strapi V5 Tiptap Editor"],
   "type": "commonjs",
   "exports": {
     "./package.json": "./package.json",
