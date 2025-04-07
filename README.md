@@ -47,9 +47,10 @@ module.exports = {
     "draftAndPublish": true
   },
   "attributes": {
-    "content": {
-      "type": "tiptap-editor"
-    }
+    "yourTtype": {
+      "type": "customField",
+      "customField": "plugin::tiptap-editor.tiptap-content"
+    },
   }
 }
 ```
