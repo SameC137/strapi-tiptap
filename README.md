@@ -55,6 +55,8 @@ module.exports = {
 }
 ```
 
+You can also add the field from the content type builder under the custom tab on the field selection dialog
+
 ## Dependencies
 
 This plugin uses the following key dependencies:
