@@ -1,5 +1,5 @@
 {
-  "version": "0.0.6",
+  "version": "0.0.7",
   "keywords": ["Strapi", "Tiptap", "Editor", "Strapi Rich Text Editor", "Strapi Plugin", "Strapi Tiptap Editor", "Strapi V5 Tiptap Editor"],
   "type": "commonjs",
   "exports": {
@@ -79,5 +79,9 @@
   "name": "@samemichaeltadele/tiptap-editor",
   "description": "",
   "license": "MIT",
-  "author": "@samemichaeltadele"
+  "author": "@samemichaeltadele",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SameC137/strapi-tiptap.git"
+  }
 }
