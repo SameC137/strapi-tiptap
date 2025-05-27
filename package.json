@@ -1,6 +1,22 @@
 {
-  "version": "0.0.7",
-  "keywords": ["Strapi", "Tiptap", "Editor", "Strapi Rich Text Editor", "Strapi Plugin", "Strapi Tiptap Editor", "Strapi V5 Tiptap Editor"],
+  "version": "0.0.8",
+  "keywords": [
+    "strapi",
+    "tiptap",
+    "editor",
+    "strapi rich text editor",
+    "strapi plugin",
+    "strapi tiptap editor",
+    "strapi v5 tiptap editor",
+    "strapi v5",
+    "Strapi",
+    "Tiptap",
+    "Editor",
+    "Strapi Rich Text Editor",
+    "Strapi Plugin",
+    "Strapi Tiptap Editor",
+    "Strapi V5 Tiptap Editor"
+  ],
   "type": "commonjs",
   "exports": {
     "./package.json": "./package.json",
@@ -42,6 +58,7 @@
     "lowlight": "^3.3.0",
     "lucide-react": "^0.468.0",
     "next-themes": "^0.4.4",
+    "react-dropzone": "^14.3.8",
     "react-intl": "^7.0.4",
     "react-medium-image-zoom": "^5.2.12",
     "reactjs-tiptap-editor": "^0.1.11",

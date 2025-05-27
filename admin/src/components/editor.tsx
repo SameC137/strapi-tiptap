@@ -38,6 +38,9 @@ import RcTiptapEditor, {
   Mention,
   Twitter,
 } from "reactjs-tiptap-editor";
+import { AudioNode } from "./Audio/Audio";
+import { AudioQuote } from "./AudioQuote/AudioQuote";
+import { BackgroundAudio } from "./BackgroundAudio/BackgroundAudio";
 
 import "reactjs-tiptap-editor/style.css";
 
@@ -94,20 +97,24 @@ const extensions = [
   Link,
   Image.configure({
     upload: (files: File) => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(URL.createObjectURL(files));
-        }, 500);
-      });
+      const formData = new FormData();
+      formData.append(`files`, files, files.name);
+      return fetch('/api/upload', {
+        method: 'post',
+        body: formData
+
+      }).then((response) => response.json()).then((response) => `${location.hostname}${response.data[0].url}`);
     },
   }),
   Video.configure({
     upload: (files: File) => {
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          resolve(URL.createObjectURL(files));
-        }, 500);
-      });
+      const formData = new FormData();
+      formData.append(`files`, files, files.name);
+      return fetch('/api/upload', {
+        method: 'post',
+        body: formData
+
+      }).then((response) => response.json()).then((response) => `${location.hostname}${response.data[0].url}`);
     },
   }),
   Blockquote.configure({ spacer: true }),
@@ -127,6 +134,9 @@ const extensions = [
   }),
   Mention,
   Twitter,
+  AudioNode.configure(),
+  AudioQuote.configure(),
+  BackgroundAudio.configure(),
 ];
 
 const DEFAULT = "";
