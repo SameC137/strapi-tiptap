@@ -43,6 +43,7 @@ import { AudioQuote } from "./AudioQuote/AudioQuote";
 import { BackgroundAudio } from "./BackgroundAudio/BackgroundAudio";
 
 import "reactjs-tiptap-editor/style.css";
+import ImageBlock from "./ImageBlock/ImageBlock";
 
 function convertBase64ToBlob(base64: string) {
   const arr = base64.split(",");
@@ -137,6 +138,7 @@ const extensions = [
   AudioNode.configure(),
   AudioQuote.configure(),
   BackgroundAudio.configure(),
+  ImageBlock
 ];
 
 const DEFAULT = "";
